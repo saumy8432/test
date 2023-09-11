@@ -1,0 +1,12 @@
+{# src/TWDHelloWorldBundle/Resources/views/hello_world.html.twig #}
+
+{% block body %}
+    <h1>Data Objects</h1>
+    <ul>
+        {% for dataObject in dataObjects %}
+            <li>
+                {{ dataObject.getName() }} - {{ dataObject.getType() }} - {{ dataObject.getPrice() }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

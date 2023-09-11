@@ -1,0 +1,27 @@
+{
+    "name": "twd/hello-world-bundle",
+    "version": "0.1.0",
+    "type": "symfony-bundle",
+    "description": "test",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TWD\\HelloWorldBundle\\": "src/"
+            
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "TWD\\HelloWorldBundle\\Tests": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aman",
+            "email": "my@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+twd_hello_world_bundle.routes:
+    resource: '@TwdHelloWorldBundle/config/routes.yaml'

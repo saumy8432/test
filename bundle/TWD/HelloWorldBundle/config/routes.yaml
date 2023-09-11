@@ -1,0 +1,3 @@
+twd_hello_world_bundle.routes:
+    type: annotation
+    resource: '../src/Controller'

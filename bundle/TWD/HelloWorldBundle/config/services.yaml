@@ -1,0 +1,26 @@
+# bundles/TWD/HelloWorldBundle/config/services.yaml
+
+parameters:
+    # Any parameters you want to define go here
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    TWD\HelloWorldBundle\Controller\HelloWorldController: ~
+
+    #TWD\HelloWorldBundle\EventListener\ProductUpdateListener: ~
+    # services.yaml
+# config/services.yaml
+
+# config/services.yaml
+
+    App\EventListener\ProductUpdateListener:
+        tags:
+        - { name: kernel.event_listener, event: pimcore.dataobject.product.postUpdate, priority: 1000 }
+    # TwdHelloWorldBundle\\EventListener\ProductUpdateListener:
+    #     tags:
+    #         - { name: kernel.event_listener, event: pimcore.dataobject.product.postUpdate, method: onProductPostUpdate }
+
+
